@@ -84,4 +84,11 @@ document.addEventListener("DOMContentLoaded", () => {
             name: "Pizza Cat Restaurant",
         },
         catchphrase: "It's cheese time!",
-    }
+    };
+
+    // Destructuring  extract the team leader and base location
+    const { leader, base: { baselocation } } = samuraiPizzaCats;
+    console.log("Samurai Pizza Cats team leader:", leader);
+    console.log("Samurai Pizza Cats Headquarters Location:", baselocation);
+});
+
